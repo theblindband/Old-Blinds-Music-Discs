@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "blinds_music_discs",
+	"version": "${version}",
+	"name": "Blind's Music Discs",
+	"description": "Some additional Music Discs for your enjoyment or disappointment as well as a new jukebox to play them in.",
+	"authors": [
+		"TheBlindBandit6#6332"
+	],
+	"contact": {
+		"homepage": ""
+	},
+	"license": "MIT",
+	"icon": "assets/blinds_music_discs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"theblindbandit6.blinds_music_discs.BlindsMusicDiscs"
+		],
+		"fabric-datagen": [
+			"theblindbandit6.blinds_music_discs.BlindsMusicDiscsDataGenerator"
+		]
+	},
+	"mixins": [
+		"blinds_music_discs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.11",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

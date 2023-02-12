@@ -1,0 +1,52 @@
+{
+  "parent": "blinds_music_discs:musical_world/obtain_all_vanilla_discs",
+  "criteria": {
+    "obtain_sweden": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blinds_music_discs:music_disc_sweden"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "obtain_dog": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blinds_music_discs:music_disc_dog"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.musical_world.obtain_all_mod_discs.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "blinds_music_discs:music_disc_sweden"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.musical_world.obtain_all_mod_discs.title"
+    }
+  },
+  "requirements": [
+    [
+      "obtain_sweden"
+    ],
+    [
+      "obtain_dog"
+    ]
+  ]
+}

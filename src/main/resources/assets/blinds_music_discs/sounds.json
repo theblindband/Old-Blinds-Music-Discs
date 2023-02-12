@@ -1,0 +1,18 @@
+{
+  "music_disc.music_sweden": {
+    "sounds": [
+      {
+        "name": "blinds_music_discs:music_sweden",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.music_dog": {
+    "sounds": [
+      {
+        "name": "blinds_music_discs:music_dog",
+        "stream": true
+      }
+    ]
+  }
+}
