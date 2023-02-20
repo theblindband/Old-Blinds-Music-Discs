@@ -58,6 +58,11 @@
           ],
           "name": "minecraft:book",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "blinds_music_discs:music_disc_dog",
+          "weight": 15
         }
       ],
       "rolls": {
@@ -280,12 +285,6 @@
           ],
           "name": "minecraft:string",
           "weight": 10
-        },
-
-
-        {
-          "type": "minecraft:item",
-          "name": "blinds_music_discs:music_disc_dog"
         }
       ],
       "rolls": 3.0

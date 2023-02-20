@@ -1,6 +1,8 @@
 package theblindbandit6.blinds_music_discs.mixin;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.JukeboxBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -16,8 +18,10 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import theblindbandit6.blinds_music_discs.blocks.ModBlockTags;
 import theblindbandit6.blinds_music_discs.blocks.ModBlocks;
 import theblindbandit6.blinds_music_discs.blocks.custom.SmallJukebox;
+
 
 @Mixin(MusicDiscItem.class)
 public class MusicDiscItemMixin extends Item {
@@ -27,23 +31,23 @@ public class MusicDiscItemMixin extends Item {
 
 	@Inject(at = @At("HEAD"), method = "useOnBlock")
 	private ActionResult init(ItemUsageContext context, CallbackInfoReturnable info) {
-		// This code is injected into the start of MusicDiscItem.useOnBlock()V
+		// This code is injected into the start of MusicDiscItem.useOnBlock()
 		BlockPos blockPos;
 		World world = context.getWorld();
 		BlockState blockState = world.getBlockState(blockPos = context.getBlockPos());
-		if (!blockState.isOf(ModBlocks.SMALL_JUKEBOX) || blockState.get(SmallJukebox.HAS_RECORD).booleanValue()) {
-			return ActionResult.PASS;
-		}
-		ItemStack itemStack = context.getStack();
-		if (!world.isClient) {
-			((SmallJukebox)ModBlocks.SMALL_JUKEBOX).setRecord(context.getPlayer(), world, blockPos, blockState, itemStack);
-			world.syncWorldEvent(null, WorldEvents.MUSIC_DISC_PLAYED, blockPos, Item.getRawId(this));
-			itemStack.decrement(1);
-			PlayerEntity playerEntity = context.getPlayer();
-			if (playerEntity != null) {
-				playerEntity.incrementStat(Stats.PLAY_RECORD);
+			if (!blockState.isIn(ModBlockTags.SMALL_JUKEBOXES) || blockState.get(SmallJukebox.HAS_RECORD).booleanValue()) {
+				return ActionResult.PASS;
 			}
-		}
+			ItemStack itemStack = context.getStack();
+			if (!world.isClient) {
+				((SmallJukebox) ModBlocks.SMALL_OAK_JUKEBOX).setRecord(context.getPlayer(), world, blockPos, blockState, itemStack);
+				world.syncWorldEvent(null, WorldEvents.MUSIC_DISC_PLAYED, blockPos, Item.getRawId(this));
+				itemStack.decrement(1);
+				PlayerEntity playerEntity = context.getPlayer();
+				if (playerEntity != null) {
+					playerEntity.incrementStat(Stats.PLAY_RECORD);
+				}
+			}
 		return ActionResult.success(world.isClient);
 	}
 

@@ -34,16 +34,14 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "small_jukebox": {
+    "small_jukeboxes": {
       "conditions": {
-        "items": [
-          {
-            "items": [
-              "blinds_music_discs:small_jukebox"
-            ]
-          }
-        ]
-      },
+      "items": [
+        {
+          "tag": "blinds_music_discs:small_jukeboxes"
+        }
+      ]
+    },
       "trigger": "minecraft:inventory_changed"
     }
   },
@@ -68,7 +66,7 @@
       "jukebox",
       "music_discs",
       "disc_fragment_5",
-      "small_jukebox"
+      "small_jukeboxes"
     ]
   ]
 }

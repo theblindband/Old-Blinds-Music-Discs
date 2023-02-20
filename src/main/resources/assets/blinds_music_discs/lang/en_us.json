@@ -1,6 +1,42 @@
 {
-  "item.blinds_music_discs.small_jukebox": "Small Jukebox",
-  "block.blinds_music_discs.small_jukebox": "Small Jukebox",
+  "item.blinds_music_discs.small_oak_jukebox": "Small Oak Jukebox",
+  "block.blinds_music_discs.small_oak_jukebox": "Small Oak Jukebox",
+
+  "item.blinds_music_discs.small_spruce_jukebox": "Small Spruce Jukebox",
+  "block.blinds_music_discs.small_spruce_jukebox": "Small Spruce Jukebox",
+
+  "item.blinds_music_discs.small_birch_jukebox": "Small Birch Jukebox",
+  "block.blinds_music_discs.small_birch_jukebox": "Small Birch Jukebox",
+
+  "item.blinds_music_discs.small_jungle_jukebox": "Small Jungle Jukebox",
+  "block.blinds_music_discs.small_jungle_jukebox": "Small Jungle Jukebox",
+
+  "item.blinds_music_discs.small_acacia_jukebox": "Small Acacia Jukebox",
+  "block.blinds_music_discs.small_acacia_jukebox": "Small Acacia Jukebox",
+
+  "item.blinds_music_discs.small_dark_oak_jukebox": "Small Dark Oak Jukebox",
+  "block.blinds_music_discs.small_dark_oak_jukebox": "Small Dark Oak Jukebox",
+
+  "item.blinds_music_discs.small_mangrove_jukebox": "Small Mangrove Jukebox",
+  "block.blinds_music_discs.small_mangrove_jukebox": "Small Mangrove Jukebox",
+
+  "item.blinds_music_discs.small_crimson_jukebox": "Small Crimson Jukebox",
+  "block.blinds_music_discs.small_crimson_jukebox": "Small Crimson Jukebox",
+
+  "item.blinds_music_discs.small_warped_jukebox": "Small Warped Jukebox",
+  "block.blinds_music_discs.small_warped_jukebox": "Small Warped Jukebox",
+
+  "item.blinds_music_discs.music_disc_door": "Music Disc",
+  "item.blinds_music_discs.music_disc_door.desc": "C418 - Door",
+
+  "item.blinds_music_discs.music_disc_death": "Music Disc",
+  "item.blinds_music_discs.music_disc_death.desc": "C418 - Death",
+
+  "item.blinds_music_discs.music_disc_wet_hands": "Music Disc",
+  "item.blinds_music_discs.music_disc_wet_hands.desc": "C418 - Wet Hands",
+
+  "item.blinds_music_discs.music_disc_chris": "Music Disc",
+  "item.blinds_music_discs.music_disc_chris.desc": "C418 - Chris",
 
   "item.blinds_music_discs.music_disc_sweden": "Music Disc",
   "item.blinds_music_discs.music_disc_sweden.desc": "C418 - Sweden",
@@ -8,8 +44,19 @@
   "item.blinds_music_discs.music_disc_dog": "Music Disc",
   "item.blinds_music_discs.music_disc_dog.desc": "C418 - Dog",
 
-  "itemGroup.blinds_music_discs.blinds_music_discs_itemgroup": "Blind's Music Discs",
+  "item.blinds_music_discs.music_disc_droopy_likes_your_face": "Music Disc",
+  "item.blinds_music_discs.music_disc_droopy_likes_your_face.desc": "C418 - Droopy Likes Your Face",
 
+  "item.blinds_music_discs.music_disc_flake": "Music Disc",
+  "item.blinds_music_discs.music_disc_flake.desc": "C418 - Flake",
+
+  "item.blinds_music_discs.music_disc_kyoto": "Music Disc",
+  "item.blinds_music_discs.music_disc_kyoto.desc": "C418 - Kyoto",
+
+  "item.blinds_music_discs.music_disc_intro": "Music Disc",
+  "item.blinds_music_discs.music_disc_intro.desc": "C418 - Intro",
+
+  "itemGroup.blinds_music_discs.blinds_music_discs_itemgroup": "Blind's Music Discs",
 
   "advancements.musical_world.root.title": "Musical World",
   "advancements.musical_world.root.description": "Obtain a jukebox to open up a world of music.",
@@ -49,4 +96,5 @@
 
   "advancements.musical_world.obtain_all_mod_discs.title": "Encore!",
   "advancements.musical_world.obtain_all_mod_discs.description": "Obtain all modded music discs."
+
 }

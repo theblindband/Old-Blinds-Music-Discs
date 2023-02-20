@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "blinds_music_discs:item/music_disc_droopy_likes_your_face"
+  }
+}

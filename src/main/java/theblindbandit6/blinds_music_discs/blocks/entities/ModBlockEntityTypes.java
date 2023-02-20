@@ -12,7 +12,7 @@ public class ModBlockEntityTypes{
     public static final BlockEntityType<SmallJukeboxEntity> SMALL_JUKEBOX_ENTITY = Registry.register(
             Registry.BLOCK_ENTITY_TYPE,
             new Identifier(BlindsMusicDiscs.MOD_ID, "small_jukebox_entity"),
-            FabricBlockEntityTypeBuilder.create(SmallJukeboxEntity::new, ModBlocks.SMALL_JUKEBOX).build()
+            FabricBlockEntityTypeBuilder.create(SmallJukeboxEntity::new, ModBlocks.SMALL_OAK_JUKEBOX).build()
     );
 
     public static void registerModBlockEntities() {

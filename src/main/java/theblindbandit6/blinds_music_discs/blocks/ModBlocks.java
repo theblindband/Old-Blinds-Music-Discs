@@ -15,7 +15,31 @@ import theblindbandit6.blinds_music_discs.items.ModItemGroup;
 public class ModBlocks {
 
     //Blocks
-    public static final Block SMALL_JUKEBOX = registerBlock("small_jukebox",
+    public static final Block SMALL_OAK_JUKEBOX = registerBlock("small_oak_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_SPRUCE_JUKEBOX = registerBlock("small_spruce_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_BIRCH_JUKEBOX = registerBlock("small_birch_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_JUNGLE_JUKEBOX = registerBlock("small_jungle_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_ACACIA_JUKEBOX = registerBlock("small_acacia_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_DARK_OAK_JUKEBOX = registerBlock("small_dark_oak_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_MANGROVE_JUKEBOX = registerBlock("small_mangrove_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_CRIMSON_JUKEBOX = registerBlock("small_crimson_jukebox",
+            new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
+            ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
+    public static final Block SMALL_WARPED_JUKEBOX = registerBlock("small_warped_jukebox",
             new SmallJukebox(FabricBlockSettings.copy(Blocks.JUKEBOX)),
             ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
     //Block Registers

@@ -15,11 +15,27 @@ public class ModItems {
     private static final FabricItemSettings MUSIC_DISC = new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)
             .group(ModItemGroup.BLINDS_MUSIC_DISCS_ITEMGROUP);
     //Music Discs
-    //Minecraft Music
-    public static final MusicDiscItem SWEDEN = registerMusicDiscItem("music_disc_sweden",
-            new MusicDiscItem(1, ModSoundEvents.MUSIC_DISC_SWEDEN, MUSIC_DISC, 215));
-    public static final MusicDiscItem DOG = registerMusicDiscItem("music_disc_dog",
-            new MusicDiscItem(2, ModSoundEvents.MUSIC_DISC_DOG, MUSIC_DISC, 146));
+    //Publish Version Discs
+    public static final MusicDiscItem MUSIC_DISC_DOOR = registerMusicDiscItem("music_disc_door",
+            new MusicDiscItem(1, ModSoundEvents.DOOR, MUSIC_DISC, 111));
+    public static final MusicDiscItem MUSIC_DISC_DEATH = registerMusicDiscItem("music_disc_death",
+            new MusicDiscItem(2, ModSoundEvents.DEATH, MUSIC_DISC, 41));
+    public static final MusicDiscItem MUSIC_DISC_WET_HANDS = registerMusicDiscItem("music_disc_wet_hands",
+            new MusicDiscItem(3, ModSoundEvents.WET_HANDS, MUSIC_DISC, 90));
+    public static final MusicDiscItem MUSIC_DISC_CHIRS = registerMusicDiscItem("music_disc_chris",
+            new MusicDiscItem(4, ModSoundEvents.CHIRS, MUSIC_DISC, 87));
+    public static final MusicDiscItem MUSIC_DISC_SWEDEN = registerMusicDiscItem("music_disc_sweden",
+            new MusicDiscItem(5, ModSoundEvents.SWEDEN, MUSIC_DISC, 215));
+    public static final MusicDiscItem MUSIC_DISC_DOG = registerMusicDiscItem("music_disc_dog",
+            new MusicDiscItem(6, ModSoundEvents.DOG, MUSIC_DISC, 146));
+    public static final MusicDiscItem MUSIC_DISC_DROOPY_LIKES_YOUR_FACE = registerMusicDiscItem("music_disc_droopy_likes_your_face",
+            new MusicDiscItem(7, ModSoundEvents.DROOPY_LIKES_YOUR_FACE, MUSIC_DISC, 116));
+    public static final MusicDiscItem MUSIC_DISC_FLAKE = registerMusicDiscItem("music_disc_flake",
+            new MusicDiscItem(8, ModSoundEvents.FLAKE, MUSIC_DISC, 170));
+    public static final MusicDiscItem MUSIC_DISC_KYOTO = registerMusicDiscItem("music_disc_kyoto",
+            new MusicDiscItem(9, ModSoundEvents.KYOTO, MUSIC_DISC, 249));
+    public static final MusicDiscItem MUSIC_DISC_INTRO = registerMusicDiscItem("music_disc_intro",
+            new MusicDiscItem(10, ModSoundEvents.INTRO, MUSIC_DISC, 276));
     //Item Registers
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(BlindsMusicDiscs.MOD_ID, name),item);
@@ -33,15 +49,3 @@ public class ModItems {
         BlindsMusicDiscs.LOGGER.info("Registering Mod Items for " + BlindsMusicDiscs.MOD_ID);
     }
 }
-
-//Items found here were removed. Code has been kept in case I decide to re-add them in the future.
-    /*
-    public static final Item BLANK_DISC = registerItem("blank_disc", new Item(BASE));
-    public static final Item BLANK_RECORD_CENTER = registerItem("blank_record_center", new Item(BASE));
-    public static final Item RECORD_CENTER_IMPOSTER = registerItem("record_center_imposter", new Item(BASE));
-    public static final Item RECORD_CENTER_STARDEW_VALLEY = registerItem("record_center_stardew_valley", new Item(BASE));
-    public static final Item RECORD_CENTER_MANTIS_LORDS = registerItem("record_center_mantis_lords", new Item(BASE));
-    public static final Item RECORD_CENTER_FROST_MOON = registerItem("record_center_frost_moon", new Item(BASE));
-    public static final Item RECORD_CENTER_LOONBOON = registerItem("record_center_loonboon", new Item(BASE));
-    public static final Item RECORD_CENTER_ACCUMULA_TOWN = registerItem("record_center_accumula_town", new Item(BASE));
-    */

@@ -2,6 +2,14 @@
   "values": [
     "#blinds_music_discs:mod_creeper_drop_music_discs",
 
-    "blinds_music_discs:music_disc_sweden"
+    "blinds_music_discs:music_disc_door",
+    "blinds_music_discs:music_disc_death",
+    "blinds_music_discs:music_disc_wet_hands",
+    "blinds_music_discs:music_disc_chris",
+    "blinds_music_discs:music_disc_sweden",
+    "blinds_music_discs:music_disc_droopy_likes_your_face",
+    "blinds_music_discs:music_disc_flake",
+    "blinds_music_discs:music_disc_kyoto",
+    "blinds_music_discs:music_disc_intro"
   ]
 }
